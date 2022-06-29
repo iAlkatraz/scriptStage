@@ -1,0 +1,5 @@
+interval: 300
+
+event_address: 'https://53db-91-143-202-191.ngrok.io/STAT/EVENTI'
+
+alarm_address: 'https://53db-91-143-202-191.ngrok.io/ALLARM/INFO'
