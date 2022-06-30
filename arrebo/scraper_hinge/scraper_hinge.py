@@ -43,7 +43,7 @@ status_view.click()
 # le clicco tutte e scarico i vari file di esportazione .csv
 WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[5]/div[2]/div[1]/img')))
 download_csv = driver.find_element(By.XPATH, '/html/body/div/div[5]/div[2]/div[1]/img')
-for i in range(4, 30):
+for i in range(4, 33):
     driver.find_element(By.XPATH,
                         '/html/body/div/div[5]/div[2]/div[2]/div[1]/div[1]/select/option[' + str(i) + ']').click()
     WebDriverWait(driver, 60).until(
