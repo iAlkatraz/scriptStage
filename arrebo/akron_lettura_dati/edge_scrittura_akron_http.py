@@ -10,8 +10,11 @@ with open('conf.yml', 'r') as y:
 
 #PROBLEMA: se si mette una finestra temporale di 5 minuti, non si ottengono dati
 # ESEMPIO: se attualemente sono le 17:00:00, lo script cercherà dati nella finestra temporale quale
-# 16:55:00 to 17:00:00. Ho riscontrato ieri peròp che la macchina non restituisce nulla perchè forse non ha ancora salvato nulla
-# quindi bisogna definire una finestra temporale sensata... ho pensato a 10 minuti, ma potrebbe essere da rivedere.
+# 16:55:00 to 17:00:00. Ho riscontrato ieri però che la macchina non restituisce nulla perchè forse non ha ancora salvato nulla
+# quindi bisogna definire una finestra temporale sensata... ho pensato a 10 minuti: in questo modo vengono sicuramente presi
+# sempre i dati. In riferimento alla finestra temporale dell'esempio precedente, avremo quindi 16:50:00 to 17:00:00, e verranno sicuramente
+# presi i dati dalle 16:55:00 alle 17:00:00. Quando saranno le 17:05:00, la finestra sarà 16:55:00 to 17:05:00, assicurando di prendere
+# i dati dalle 16:55:00 alle 17:00:00
 
 while True:
     # Inizializziamo a None
@@ -25,11 +28,12 @@ while True:
         print(start.strftime("%d/%m/%Y %H:%M:%S"))
         print(stop.strftime("%d/%m/%Y %H:%M:%S"))
 
+        # richiesta di valori
         event_request = requests.post(url=configuration['event_address'], json={
             "Start": start.strftime("%d/%m/%Y %H:%M:%S"),
             "Stop": stop.strftime("%d/%m/%Y %H:%M:%S"),
             "Descr": 1
-        })  # richiesta di valori
+        })
         alarm_request = requests.get(configuration['alarm_address'])
 
         print("EVENT ---- " + event_request.text)
