@@ -50,4 +50,4 @@ for i in range(4, 33):
         EC.presence_of_element_located((By.XPATH, '/html/body/div/div[5]/div[2]/div[2]/div[2]/table/tbody')))
     actionChains = ActionChains(driver)
     actionChains.move_to_element(download_csv).click().perform()
-driver.close()
+    #TODO: mettere controllo di attesa di terminazione di tutti i download pendenti
