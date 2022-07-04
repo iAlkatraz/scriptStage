@@ -51,3 +51,5 @@ for i in range(4, 33):
     actionChains = ActionChains(driver)
     actionChains.move_to_element(download_csv).click().perform()
     #TODO: mettere controllo di attesa di terminazione di tutti i download pendenti
+    #TODO: aggiungere spostamento file dalla cartella download alla cartella /files del modulo "merge_files" e lanciare la sua esecuzione
+    #TODO: verificare se si può impostare una cartella di download differente da quella di default
