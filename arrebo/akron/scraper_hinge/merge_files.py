@@ -34,18 +34,19 @@ def get_correct_name(file):
     return name
 
 
-files = [f for f in listdir("./files") if isfile(join("./files", f))]  # file da cui prendere i dati
-for f in files:
-    file_from = open("./files/" + f, 'r')
-    lines = file_from.readlines()
-    file_to_name = get_correct_name(f)
-    file_to = open("./merged/" + file_to_name, 'a')  # file a cui appendere i dati
-    first = True
-    for line in lines:
-        if first:
-            first = False
-        else:
-            file_to.write(line)
-    file_from.close()
-    file_to.close()
-    remove(join("./files", f))
+def merge():
+    files = [f for f in listdir("files") if isfile(join("files", f))]  # file da cui prendere i dati
+    for f in files:
+        file_from = open("./files/" + f, 'r')
+        lines = file_from.readlines()
+        file_to_name = get_correct_name(f)
+        file_to = open("./merged/" + file_to_name, 'a')  # file a cui appendere i dati
+        first = True
+        for line in lines:
+            if first:
+                first = False
+            else:
+                file_to.write(line)
+        file_from.close()
+        file_to.close()
+        remove(join("files", f))
