@@ -62,6 +62,7 @@ for i in range(4, 33):
     actionChains = ActionChains(driver)
     actionChains.move_to_element(download_csv).click().perform()
 
+#attendo che tutti i file siano scaricati
 wait = True
 while wait:
     wait = False
@@ -76,4 +77,5 @@ while wait:
             break
 driver.close()
 driver.quit()
+#chiamo la funzione mer mergiare i file scaricati
 merge()
