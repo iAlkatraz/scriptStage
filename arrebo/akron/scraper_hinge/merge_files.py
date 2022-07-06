@@ -50,3 +50,5 @@ def merge():
         file_from.close()
         file_to.close()
         remove(join("files", f))
+
+merge()
