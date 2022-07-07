@@ -1,0 +1,63 @@
+{'Date': '29/06/2022 10:17:17', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '3', 'B': 'Mancanza 24 volts (GE0E07)'}
+{'Date': '29/06/2022 10:20:22', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '1', 'B': 'Mancanza aria compressa (GE0E08)'}
+{'Date': '29/06/2022 10:20:27', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:03:10'}
+{'Date': '29/06/2022 10:20:31', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '29/06/2022 10:38:01', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:17:30'}
+{'Date': '29/06/2022 10:38:01', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '29/06/2022 10:38:08', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:07'}
+{'Date': '29/06/2022 10:38:08', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '29/06/2022 10:38:08', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:00'}
+{'Date': '29/06/2022 10:43:13', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:05:05'}
+{'Date': '29/06/2022 10:43:13', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '29/06/2022 10:45:14', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:02:01'}
+{'Date': '29/06/2022 14:39:23', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '16', 'B': 'Codice bordo non trovato'}
+{'Date': '29/06/2022 14:39:37', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:14'}
+{'Date': '30/06/2022 09:25:01', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '3', 'B': 'Mancanza 24 volts (GE0E07)'}
+{'Date': '30/06/2022 09:25:22', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '1', 'B': 'Mancanza aria compressa (GE0E08)'}
+{'Date': '30/06/2022 09:25:28', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:27'}
+{'Date': '30/06/2022 09:25:50', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '30/06/2022 09:25:57', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:07'}
+{'Date': '30/06/2022 09:25:57', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '30/06/2022 09:25:58', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:01'}
+{'Date': '30/06/2022 09:25:58', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '30/06/2022 09:25:59', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:01'}
+{'Date': '30/06/2022 09:25:59', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '30/06/2022 09:26:11', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:12'}
+{'Date': '30/06/2022 09:26:11', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '30/06/2022 09:27:45', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:01:34'}
+{'Date': '30/06/2022 11:49:07', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '2', 'B': 'Dispositivo di emergenza inserito (GE0E16)'}
+{'Date': '30/06/2022 13:47:56', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '1', 'B': 'Mancanza aria compressa (GE0E08)'}
+{'Date': '30/06/2022 13:47:59', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 01:58:52'}
+{'Date': '30/06/2022 14:03:41', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '511', 'B': '  (VC1E07)'}
+{'Date': '30/06/2022 15:56:11', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 01:52:30'}
+{'Date': '01/07/2022 07:56:41', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '2', 'B': 'Dispositivo di emergenza inserito (GE0E16)'}
+{'Date': '01/07/2022 08:34:56', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '1', 'B': 'Mancanza aria compressa (GE0E08)'}
+{'Date': '01/07/2022 08:55:44', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:59:03'}
+{'Date': '01/07/2022 08:56:05', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '01/07/2022 09:02:50', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:06:45'}
+{'Date': '01/07/2022 10:06:32', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '511', 'B': '  (VC1E07)'}
+{'Date': '04/07/2022 13:20:52', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '2', 'B': 'Dispositivo di emergenza inserito (GE0E16)'}
+{'Date': '04/07/2022 13:39:23', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '1', 'B': 'Mancanza aria compressa (GE0E08)'}
+{'Date': '04/07/2022 13:39:25', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:18:33'}
+{'Date': '04/07/2022 13:39:50', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '04/07/2022 13:40:16', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '418', 'B': ' ERRORE QUOTA ASSE (NP3B01)'}
+{'Date': '04/07/2022 13:44:32', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:04:42'}
+{'Date': '04/07/2022 14:50:36', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '511', 'B': '  (VC1E07)'}
+{'Date': '04/07/2022 14:53:33', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:02:57'}
+{'Date': '04/07/2022 14:53:42', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '22', 'B': 'Fotocellula bordo chiusa (ND1B01)'}
+{'Date': '04/07/2022 14:53:43', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '24', 'B': 'Sicurezza bordo sx - '}
+{'Date': '04/07/2022 14:53:49', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:07'}
+{'Date': '04/07/2022 14:53:49', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '24', 'B': 'Sicurezza bordo sx - '}
+{'Date': '04/07/2022 14:54:13', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:00:24'}
+{'Date': '04/07/2022 15:18:46', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '511', 'B': '  (VC1E07)'}
+{'Date': '04/07/2022 15:22:41', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:03:55'}
+{'Date': '04/07/2022 17:10:01', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '2', 'B': 'Dispositivo di emergenza inserito (GE0E16)'}
+{'Date': '05/07/2022 07:49:36', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '2', 'B': 'Dispositivo di emergenza inserito (GE0E16)'}
+{'Date': '05/07/2022 07:58:23', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '1', 'B': 'Mancanza aria compressa (GE0E08)'}
+{'Date': '05/07/2022 07:58:26', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:08:50'}
+{'Date': '05/07/2022 07:58:51', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '11', 'B': 'Assi non azzerati'}
+{'Date': '05/07/2022 08:00:05', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '418', 'B': ' ERRORE QUOTA ASSE (NE5B01)'}
+{'Date': '05/07/2022 08:06:51', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:08:00'}
+{'Date': '05/07/2022 08:18:39', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '511', 'B': '  (VC1E07)'}
+{'Date': '05/07/2022 08:22:09', 'Code': 10, 'Descr': 'END OF EMERGENCY    ', 'A': '0 - 00:03:30'}
+{'Date': '05/07/2022 09:36:20', 'Code': 9, 'Descr': 'EMERGENCY           ', 'A': '2', 'B': 'Dispositivo di emergenza inserito (GE0E16)'}
