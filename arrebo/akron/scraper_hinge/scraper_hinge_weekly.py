@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from merge_files import merge
 from datetime import *
+from arrebo.akron.dataset_scripts.append_data import append_data
 
 with open('conf.yml', 'r') as y:
     configuration = yaml.safe_load(y)
@@ -111,3 +112,4 @@ driver.close()
 driver.quit()
 # chiamo la funzione mer mergiare i file scaricati
 merge()
+append_data()
