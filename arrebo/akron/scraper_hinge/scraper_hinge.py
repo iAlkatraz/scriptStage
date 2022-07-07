@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from merge_files import merge
+from arrebo.akron.dataset_scripts.append_data import append_data
 
 with open('conf.yml', 'r') as y:
     configuration = yaml.safe_load(y)
@@ -62,7 +63,7 @@ for i in range(4, 33):
     actionChains = ActionChains(driver)
     actionChains.move_to_element(download_csv).click().perform()
 
-#attendo che tutti i file siano scaricati
+# attendo che tutti i file siano scaricati
 wait = True
 while wait:
     wait = False
@@ -77,5 +78,6 @@ while wait:
             break
 driver.close()
 driver.quit()
-#chiamo la funzione mer mergiare i file scaricati
+# chiamo la funzione mer mergiare i file scaricati
 merge()
+append_data()
