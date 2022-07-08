@@ -1,5 +1,6 @@
 import datetime
 import json
+import os
 from os import listdir
 from os.path import isfile, join
 import csv
@@ -7,7 +8,7 @@ import pandas as pd
 
 
 # funzione per leggere ogni json del file event.txt e scrivere un file event_temp.txt in cui ci sono tutte le righe dei vari json
-def read_event():
+def create_event_temp():
     event_file = open("event.txt", "r")
     dizionario = dict()
     with open("event_temp.txt", "a") as event_temp_file:
@@ -22,8 +23,9 @@ def read_event():
         event_temp_file.close()
 
 
-# funzione per leggere dal fule event.txt e creare un file emergencies.txt che contiene sono EMERGENCY e END OF EMERGENCY
-def read_emergencies():
+# TODO: modificare in modo che faccia un confronto con il file alarm.txt e verifchi che se in emergenza e warning allora mettere come descrizione dispositivo di emergenza inserito
+# funzione per leggere dal file event.txt e creare un file emergencies.txt che contiene solo EMERGENCY e END OF EMERGENCY
+def get_only_emergencies():
     event_file = open("event.txt", "r")
     dizionario = dict()
     with open("emergencies.txt", "a") as emergencies_file:
@@ -63,7 +65,8 @@ def get_emergencies():
     for line in file.readlines():
         json_obj = json.loads(line.replace("\n", "").replace("'", '"'))
         if json_obj["Descr"].strip() == "EMERGENCY":
-            if json_obj["B"].strip() == "(VC1E07)":
+            if json_obj[
+                "B"].strip() == "(VC1E07)":  # nel file alarm, se c'è warning a 1 ed emergenza a 1, e nel corrispettivo file event, l'emergenza è (VC1E07), allora l'emergenza in realtà è dispositivo di emergenza inserito (funghi)
                 if "Dispositivo di emergenza inserito (GE0E16)" in emergencies:
                     emergencies["Dispositivo di emergenza inserito (GE0E16)"].append(
                         (json_obj["Date"], get_end_emergency(json_obj["Date"])))
@@ -98,12 +101,10 @@ def create_dataset():
         writer.writerow(header)
         for i in range(len(files_open[0])):
             row = list()
-            first = True
             for file in files_open:
-                if first:  # solo la prima volta devo mettere il timestamp (tanto è uguale per tutti)
+                if len(row) == 0:  # solo la prima volta devo mettere il timestamp (tanto è uguale per tutti)
                     row.append(file["board time"][i])
                     row.append(file["value"][i])
-                    first = False
                 else:
                     row.append(file["value"][i])
             writer.writerow(row)
@@ -136,5 +137,18 @@ def create_dataset():
     dataset.to_csv("dataset_hinge.csv", index=False)
 
 
-# read_event()
+try:
+    os.remove("emergencies.txt")
+except:
+    print("emergencies.txt does not exist")
+try:
+    os.remove("event_temp.txt")
+except:
+    print("event_temp.txt does not exist")
+try:
+    os.remove("dataset_hinge.csv")
+except:
+    print("dataset_hinge.csv does not exist")
+create_event_temp()
+get_only_emergencies()
 create_dataset()
