@@ -115,6 +115,9 @@ def create_dataset(configuration):
             writer.writerow(row)
     dataset.close()
     emergencies = get_emergencies()
+    # da qui parte la sezione in cui vado a sostituire la colonna dei flag 0 1 dell'emergenza con l'effettiva
+    # motivazione dell'emergenza: se c'è una emergenza, e quindi 1, al posto di 1 ci sarà la stringa di motivazione
+    # dell'emergenza
     dataset = pd.read_csv(configuration["CUSTOMER_PATH"] + "/dataset_akron.csv")
     dataset.insert(6, "ST_MACH_EMERG_DESC", '')
     for index, row in dataset.iterrows():
