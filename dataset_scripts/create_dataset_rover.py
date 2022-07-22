@@ -36,5 +36,9 @@ dataset = pd.read_csv(file_name)
 data = cur.execute("SELECT TIMESTAMP, datas from machine_datas")
 times = [time[0] for time in data]
 dataset.insert(loc=0, column="TIME_STAMP", value=times)
-dataset["TOOL"].fillna("NONE", inplace=True)
+for col in dataset.columns:
+    if dataset[col].dtype in ["int64", "float64"]:
+        dataset[col].fillna(0, inplace=True)
+    else:
+        dataset[col].fillna("NONE", inplace=True)
 dataset.to_csv(file_name, index=False)
